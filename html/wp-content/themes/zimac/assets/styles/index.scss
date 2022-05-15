@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+//
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+//
+@import "./typography";
+@import "./bacdrop-filter";
+@import "./line-clamp";
+@import "./glide-slide";
+@import "./customs";
+@import "./nav";
+@import "./single-page";
+//
+@import "./custom-page-submitted";
+@import "./widget";
+@import "./footer-widget";
+@import "./single-widget";
+//
+@import "./gutenberg/index.scss";

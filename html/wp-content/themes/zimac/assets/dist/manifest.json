@@ -1,0 +1,24 @@
+{
+  "main.js": {
+    "file": "assets/main.be14effb.js",
+    "src": "main.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor.432a09d5.js"
+    ],
+    "css": [
+      "assets/main.56c67081.css"
+    ]
+  },
+  "editor/index.js": {
+    "file": "assets/editor.78302dae.js",
+    "src": "editor/index.js",
+    "isEntry": true,
+    "css": [
+      "assets/editor.099b4bfa.css"
+    ]
+  },
+  "_vendor.432a09d5.js": {
+    "file": "assets/vendor.432a09d5.js"
+  }
+}

@@ -1,0 +1,51 @@
+.footer-four-widget-area {
+	.wil-footer-widget-title {
+		@apply text-base text-white font-bold uppercase tracking-wider mb-5;
+	}
+	// cat-item
+	.footer-widget-1,
+	.footer-widget-2,
+	.footer-widget-3,
+	.footer-widget-4 {
+		@apply text-gray-500;
+		// RSS
+		.rsswidget {
+			@apply text-white;
+		}
+
+		// TABLE
+		.calendar_wrap {
+			caption {
+				@apply mb-2 text-left;
+			}
+			table {
+				@apply w-full;
+				td,
+				th {
+					@apply text-left;
+				}
+			}
+			a,
+			caption {
+				@apply text-white;
+			}
+		}
+
+		// UL LIST
+		ul {
+			@apply space-y-4;
+		}
+		.menu-item,
+		.cat-item,
+		.page_item,
+		li {
+			@apply space-y-4;
+			ul {
+				@apply space-y-4 pl-4;
+			}
+			a {
+				@apply hover:text-white transition-colors duration-200 capitalize;
+			}
+		}
+	}
+}

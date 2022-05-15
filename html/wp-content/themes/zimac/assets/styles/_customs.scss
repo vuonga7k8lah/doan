@@ -1,0 +1,200 @@
+.z-9 {
+  z-index: 9;
+}
+.z-8 {
+  z-index: 8;
+}
+.z-7 {
+  z-index: 7;
+}
+.z-6 {
+  z-index: 6;
+}
+.z-5 {
+  z-index: 5;
+}
+.z-4 {
+  z-index: 4;
+}
+.z-3 {
+  z-index: 3;
+}
+.z-2 {
+  z-index: 2;
+}
+.z-1 {
+  z-index: 1;
+}
+//
+.wil-logo {
+  @apply overflow-hidden;
+  img {
+    @apply w-auto h-12;
+  }
+}
+#wil-modal-navigation-mobile {
+  .wil-logo {
+    img {
+      @apply w-auto h-11;
+    }
+  }
+}
+
+// === #wil-switch-night-mode-icon === //
+[data-switch-night-mode-icon]::before {
+  content: "\f186";
+}
+.dark [data-switch-night-mode-icon]::before {
+  content: "\f185";
+}
+
+// === wil-invisible-scrollbar === //
+.wil-invisible-scrollbar {
+  scrollbar-width: none !important;
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+// === wil-tooltip === //
+.wil-tooltip {
+  .wil-tooltip__label {
+    display: none;
+  }
+  &:hover .wil-tooltip__label {
+    display: block;
+  }
+}
+
+/* === My nav- === */
+.wil-nav-item__a--type1--active {
+  @apply bg-primary text-gray-900 font-bold;
+}
+
+.wil-nav-item--type1 {
+  .wil-nav-item__a--type3--active {
+    @apply bg-primary text-gray-900 font-bold;
+  }
+}
+
+.wil-nav-item__a--type3--active {
+  @apply bg-primary text-gray-900 font-medium bg-opacity-50;
+}
+
+.wil-nav-item__a--type2--active,
+.glide__bullet--active .wil-nav-item--type2 > a {
+  @apply bg-white text-gray-800 font-bold shadow-myShadow1;
+  @apply hover:text-gray-900 #{!important};
+}
+
+//
+.wil-circle-9px {
+  width: 9px;
+  height: 9px;
+}
+
+.wil-circle-13px {
+  width: 13px;
+  height: 13px;
+}
+
+// === searchwp-live-search CSS CUSTOM
+.searchwp-live-search-results {
+  @apply shadow-xl rounded-xl bg-white min-h-[200px] text-gray-800;
+  .spinner {
+    @apply opacity-50;
+  }
+  @keyframes searchwp-spinner-line-fade-quick {
+    0%,
+    39%,
+    100% {
+      opacity: 0.25;
+    }
+    40% {
+      opacity: 1;
+    }
+  }
+}
+
+.searchwp-live-search-no-min-chars:after {
+  @apply text-gray-700 text-body;
+}
+
+//
+#respond {
+  @apply text-gray-800 dark:text-gray-200;
+}
+//
+#cancel-comment-reply-link {
+  @apply text-red-500 text-base ml-2 underline font-medium;
+}
+//
+.wil-home-page__body {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+//
+
+.screen-reader-text {
+  @apply sr-only #{!important};
+}
+
+// === ELEMENTOR ===
+.wil-home-page__body {
+  .elementor-section-wrap {
+    > section.elementor-section {
+      @apply md:rounded-3.125rem md:mx-4;
+    }
+  }
+}
+.dark .elementor-section-wrap .elementor-section {
+  background: 0 0 !important;
+}
+
+//
+.wil-MailPoetFormSc {
+  @apply relative bg-gray-800 dark:border dark:border-gray-600 bg-bottom p-3 rounded-4xl overflow-hidden text-gray-100;
+  .mailpoet-heading {
+    @apply text-primary mb-8 capitalize leading-tight;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  img {
+    @apply mx-auto mb-8 #{!important};
+  }
+  input[type="email"] {
+    @apply px-5 h-14 w-full border-2 border-white border-opacity-20 rounded-full placeholder-gray-500 bg-transparent text-gray-100 text-xs md:text-body pr-14 focus:border-primary focus:ring-0 font-medium #{!important};
+  }
+  div.mailpoet_paragraph:not(.last) {
+    @apply relative;
+    &::after {
+      content: "\f0e0";
+      font-family: "Line Awesome Free";
+      font-weight: 900;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      @apply text-1.375rem leading-none text-primary px-4 right-1 top-4 absolute;
+    }
+  }
+  input[type="submit"] {
+    @apply rounded-full mt-5 h-14 w-full text-gray-900 bg-primary text-xs lg:text-sm xl:text-body inline-flex items-center justify-center text-center py-2 px-4 md:px-6 font-bold focus:outline-none;
+  }
+}
+
+//
+button {
+  &:focus {
+    outline: none !important;
+  }
+}
+//
+.wil-author-page .btn-follow-user {
+  @apply bg-transparent border border-gray-100;
+  &[data-is-following="yes"] {
+    @apply bg-primary text-gray-900;
+  }
+}

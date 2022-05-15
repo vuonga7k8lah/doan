@@ -1,0 +1,28 @@
+.prose,
+.xl\:prose-lg {
+  // ---------------------------------- ##  Code ----------------------------------
+  code {
+    @apply dark:text-gray-200 bg-gray-300 dark:bg-gray-900 font-normal px-3px rounded-[4px];
+    font-size: inherit;
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+  pre {
+    @apply dark:border dark:border-gray-600 overflow-x-auto;
+    strong {
+      color: inherit;
+    }
+  }
+}
+
+//
+.prose-sm {
+  pre {
+    @apply dark:border dark:border-gray-600 overflow-x-auto;
+    strong {
+      color: inherit;
+    }
+  }
+}

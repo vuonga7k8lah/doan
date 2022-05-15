@@ -1,0 +1,32 @@
+// ----------------------------------   ## List ----------------------------------
+.wp-admin #wpwrap .block-editor-block-list__layout.is-root-container {
+	ul,
+	ol {
+		@apply m-0 p-0 list-none;
+	}
+
+	.wp-block-categories-list.aligncenter {
+		text-align: left;
+	}
+
+	ul {
+		li {
+			&::before {
+				@apply dark:bg-gray-600;
+			}
+		}
+	}
+
+	.wp-block-latest-comments {
+		@apply list-none;
+		li.wp-block-latest-comments__comment {
+			@apply pl-0;
+			&::before {
+				@apply hidden;
+			}
+			img {
+				@apply my-1;
+			}
+		}
+	}
+}

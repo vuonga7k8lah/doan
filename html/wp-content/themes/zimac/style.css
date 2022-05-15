@@ -1,0 +1,416 @@
+/*
+Theme Name: ZIMAC
+Theme URI: https://zimac.wiloke.com
+Author: Wiloke
+Author URI: https://wiloke.com
+Description: Multi-authors WordPress Blog, Magazine Theme
+Version: 1.0
+License:     Themeforest Licence
+License URI: https://themeforest.net/licenses
+Text Domain: zimac
+Tags: blog, news, theme-options, custom-colors, editor-style, featured-images, custom-menu, translation-ready, grid-layout
+*/
+
+select {
+  max-width: 100%;
+}
+
+.bypostauthor {
+  font-family: inherit;
+}
+
+@media (min-width: 640px) {
+  .searchwp-live-search-results-showing {
+    min-width: 400px;
+  }
+}
+
+.searchwp-live-search-result__title,
+.entry-title,
+.wil-detail-page header h1,
+.wil-line-clamp-2 {
+  overflow-wrap: break-word;
+}
+
+.bg-white .wil-avatar__name {
+  color: black;
+}
+body.page-template-default .wil-container .comments-area {
+  max-width: 768px;
+}
+body[class] .comments-area {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+body.post-template .comments-area {
+  margin: 0 auto 50px;
+}
+body[class] #commentform {
+  margin-bottom: 0;
+}
+
+body[class] .wil-detail-page.wil-detail-page--1 .comment-respond {
+  padding-bottom: 3.125rem;
+}
+
+body[class] .wil-detail-page.wil-detail-page--1 span.col-span-2.col-end-3.mb-5 {
+  margin-bottom: 0;
+}
+body[class] .comment-respond h5 {
+  font-size: 1.125rem;
+}
+
+button[wil-close-modal].flex,
+button[wil-close-modal].flex:focus,
+button[wil-close-modal].flex:focus-within,
+button[wil-close-modal].flex:active {
+  outline: none;
+  box-shadow: none;
+}
+
+body[class] .calendar_wrap {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 22px;
+  border: 1px solid #c4cfd6;
+}
+
+body[class] .calendar_wrap table.wp-calendar-table th {
+  width: 37px;
+  height: 37px;
+  text-align: center !important;
+  font-size: 16px;
+  color: #312851;
+}
+
+body[class] .calendar_wrap table.wp-calendar-table td > {
+  color: #312851;
+}
+
+body[class] .calendar_wrap table.wp-calendar-table td a {
+  color: #312851;
+}
+
+body[class] .calendar_wrap table.wp-calendar-table td#today {
+  border-radius: 50% !important;
+  border: 1px solid #312851 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+body[class] .calendar_wrap table.wp-calendar-table td#today a {
+  color: #312851;
+  font-weight: bold;
+}
+
+body[class] .calendar_wrap .wp-calendar-nav a {
+  color: #312851;
+  font-size: 16px;
+}
+
+body[class] .calendar_wrap table.wp-calendar-table td {
+  width: 37px;
+  height: 37px;
+  font-size: 16px;
+  text-align: center !important;
+}
+
+body[class] .calendar_wrap table.wp-calendar-table {
+  color: #312851;
+  font-size: 16px;
+}
+body[class] .calendar_wrap caption {
+  color: #312851 !important;
+  font-size: 16px !important;
+}
+
+body[class] .footer-four-widget-area nav[role="navigation"] ul a {
+  color: #f1f1f1;
+}
+
+body[class] select {
+  border-radius: 22px;
+  width: 100%;
+  position: relative;
+  color: #000000;
+}
+
+body[class] select option {
+  color: #000000;
+}
+
+.archive.tag.tag-post-formats .nav-links {
+  margin-bottom: 18px;
+}
+
+body.home .elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+  padding: 0px !important;
+}
+
+.wil-post-large-1 .row-start-1.col-start-1.relative.z-10.py-8.flex.flex-col.justify-end.from-gray-900 {
+  padding-top: 52px !important;
+}
+
+.wil-section-recent-post-01.relative header.mb-5.text-gray-900 {
+  margin-bottom: 30px;
+}
+
+.wil-post-card-4 .absolute.bottom-4.left-4.right-4.bg-white.p-5 {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.elementor-element.pl-3.mt-2.elementor-widget.elementor-widget-wp-widget-mywidgetposttabs {
+  padding-left: 0 !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body.search .wil-container .pt-10.pb-20 .inline-flex.list-none.bg-gray-200.rounded-full {
+  margin-bottom: 30px !important;
+}
+
+body.search .nav-links {
+  margin-bottom: 0 !important;
+}
+
+body.search #pagination {
+  margin-bottom: 0 !important;
+}
+
+body.search #pagination {
+  margin-bottom: 0 !important;
+}
+
+body.search div.pt-10.pb-20 {
+  padding-bottom: 50px !important;
+}
+
+body.post-template-default .max-w-screen-md,
+body.post-template-default .max-w-screen-md .wil-detail-page__content .prose {
+  max-width: 100% !important;
+}
+
+body.category-creative .py-8 {
+  padding-bottom: 50px !important;
+}
+
+body.category-creative .grid.grid-cols-1.gap-5.mb-13 {
+  margin-bottom: 0px !important;
+}
+
+.page-template .wil-content-submitted-posts-page .wpuf-dashboard-container {
+  gap: 0rem 1.5rem;
+}
+
+.page-template ul.wpuf_packs {
+  margin-top: 0 !important;
+}
+.page-template ul.wpuf_packs,
+.page-template ul.wpuf_packs li {
+  margin-bottom: 0 !important;
+}
+
+body.category-foods .nav-links,
+body.category-travel .nav-links {
+  margin-bottom: 18px !important;
+}
+body.author-admin .nav-links {
+  margin-bottom: 0 !important;
+}
+body.archive.date .navigation.pagination {
+  padding-top: 50px;
+}
+body.archive.date .navigation.pagination .nav-links {
+  margin-bottom: 0 !important;
+}
+
+body.archive.date .grid.grid-cols-1.gap-5.mb-13 {
+  margin-bottom: 0 !important;
+}
+
+body.archive.date div.py-8 {
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  body[class] .wil-detail-page.wil-detail-page--1 .comment-respond {
+    padding-bottom: 0px;
+  }
+
+  .elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+    padding: 10px !important;
+  }
+  .page-template ul.wpuf_packs li {
+    margin-bottom: 20px !important;
+  }
+  .page-template ul.wpuf_packs li:last-child {
+    margin-bottom: 0px !important;
+  }
+}
+
+.zm-form-input {
+  background-color: white !important;
+  color: #000000 !important;
+}
+.zm-form-input::placeholder {
+  color: #000000 !important;
+}
+
+.wil-search-form {
+  width: 100%;
+}
+.zm-form {
+  width: 100% !important;
+}
+
+.is-style-outline > .wp-block-button__link:not(.has-background),
+.wp-block-button__link.is-style-outline:not(.has-background) {
+  background-color: #fff;
+}
+
+.wp-block-button.is-style-squared .wp-block-button__link {
+  border-radius: 0;
+}
+
+table {
+  border-top: 1px solid #f0f0f2;
+  border-bottom: 1px solid #f0f0f2;
+}
+
+table > :not(caption) > * > * {
+  border-width: 0 1px !important;
+  border-style: solid !important;
+  border-color: #f0f0f2 !important;
+}
+
+table tbody td:first-child {
+  padding-left: 0.5714286em !important;
+}
+
+.wp-block-cover-image .wp-block-cover-image-text,
+.wp-block-cover .wp-block-cover-text,
+section.wp-block-cover-image > h2 {
+  font-size: 36px;
+}
+.prose {
+  line-height: 1.5;
+}
+
+/* hidden */
+body[class] #wil-modal-navigation-mobile.hidden {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+}
+
+body[class] #wil-modal-navigation-mobile.hidden div[data-wil-close-modal] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body[class] #wil-modal-navigation-mobile.hidden .absolute.z-10.inset-y-0.left-0.max-w-full.flex {
+  transform: translateX(-100%);
+}
+
+/* show */
+
+body[class] #wil-modal-navigation-mobile {
+  transition: 0.2s all ease;
+  visibility: visible;
+  opacity: 1;
+}
+
+body[class] #wil-modal-navigation-mobile div[data-wil-close-modal] {
+  opacity: 1;
+  visibility: visible;
+}
+
+body[class] #wil-modal-navigation-mobile .absolute.z-10.inset-y-0.left-0.max-w-full.flex {
+  transform: translateX(0%);
+}
+
+body[class] .comment-reply {
+  line-height: inherit;
+}
+
+@media (min-width: 768px) {
+  .wil-home-page__body .elementor-section-wrap > section.elementor-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+body[class] .wil-detail-page .wil-single-related-posts-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wil-detail-page .page-links.wil-pagination {
+  clear: both;
+}
+
+#recentcomments .recentcomments a {
+  text-decoration: underline;
+}
+
+.error404 .bg-gray-100 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#comments .comment-list .prose {
+  margin-bottom: 0px;
+}
+/* 
+#respond.comment-respond {
+  padding-bottom: 0px;
+} */
+
+.wil-search-page {
+  height: 100%;
+}
+body[class] .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  margin-top: calc(0.65rem * calc(1 - var(--tw-space-y-reverse)));
+}
+.textwidget img {
+  margin-bottom: 0;
+}
+
+.prose h2 {
+  margin-top: 1em;
+}
+
+.wil-single-sidebar ul li a {
+  text-decoration: underline;
+}
+
+.wil-single-sidebar li {
+  line-height: 1.5;
+}
+
+.wp-calendar-table,
+.wp-calendar-table td,
+.wp-calendar-table th {
+  border: none !important;
+}

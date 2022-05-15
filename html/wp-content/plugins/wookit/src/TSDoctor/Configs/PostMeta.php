@@ -1,0 +1,137 @@
+<?php
+
+use DoAn\Shared\AutoPrefix;
+$prefix='_TSDoctor_';
+return [
+    'TSDoctor_general_settings_section' => [
+        'id'           => 'TSDoctor_general_settings_section',
+        'title'        => 'Hồ sơ đăng ký dự tuyển gồm:',
+        'object_types' => [AutoPrefix::namePrefix( 'TSDoctor' )],
+        'fields'       => [
+            'registrationForm'     => [
+                'name'         => esc_html__('1.Đơn đăng ký dự tuyển', 'do an'),
+                'id'           => $prefix.'registrationForm',
+                'type'         => 'file_list',
+                'save_field'   => true,
+                'preview_size' => [100, 100], // Default: array( 50, 50 )50
+                // 'query_args' => array( 'type' => 'image' ), // Only images attachment
+                // Optional, override default text strings
+                'text'         => [
+                    'add_upload_files_text' => 'Upload Files', // default: "Add or Upload Files"
+                    'remove_image_text'     => 'Remove Image', // default: "Remove Image"
+                    'file_text'             => 'File', // default: "File:"
+                    'file_download_text'    => 'Download', // default: "Download"
+                    'remove_text'           => 'Remove', // default: "Remove"
+                ]
+            ],
+            'lyLichKhoaHoc'        => [
+                'name'         => esc_html__('2.Sơ yếu lý lịch(có xác nhận của cơ quan quản lý)', 'do an'),
+                'id'           => $prefix.'lyLichKhoaHoc',
+                'type'         => 'file_list',
+                'save_field'   => true,
+                'preview_size' => [100, 100], // Default: array( 50, 50 )50
+                //'preview_size' => [100, 100], // Default: array( 50, 50 )
+                // 'query_args' => array( 'type' => 'image' ), // Only images attachment
+                // Optional, override default text strings
+                'text'         => [
+                    'add_upload_files_text' => 'Upload Files', // default: "Add or Upload Files"
+                    'remove_image_text'     => 'Remove Image', // default: "Remove Image"
+                    'file_text'             => 'File', // default: "File:"
+                    'file_download_text'    => 'Download', // default: "Download"
+                    'remove_text'           => 'Remove', // default: "Remove"
+                ]
+            ],
+            'cacLoaiGiayKhac'      => [
+                'name'         => esc_html__('3.Bản sao công chứng các loại giấy tờ liên quan', 'do an'),
+                'id'           => $prefix.'cacLoaiGiayKhac',
+                'disc'         => '1. Bằng và bảng điểm tốt nghiệp đại học
+                         2. Các loại giấy tờ xác nhận ưu tiên nếu có
+                ',
+                'type'         => 'file_list',
+                'save_field'   => true,
+                'preview_size' => [100, 100], // Default: array( 50, 50 )50
+                //'preview_size' => [100, 100], // Default: array( 50, 50 )
+                // 'query_args' => array( 'type' => 'image' ), // Only images attachment
+                // Optional, override default text strings
+                'text'         => [
+                    'add_upload_files_text' => 'Upload Files', // default: "Add or Upload Files"
+                    'remove_image_text'     => 'Remove Image', // default: "Remove Image"
+                    'file_text'             => 'File', // default: "File:"
+                    'file_download_text'    => 'Download', // default: "Download"
+                    'remove_text'           => 'Remove', // default: "Remove"
+                ]
+            ],
+            'giayChungNhanHocVien' => [
+                'name'         => esc_html__('4.Giấy chứng nhận', 'do an'),
+                'id'           => $prefix.'giayChungNhanHocVien',
+                'disc'         => 'Giấy chứng nhận hoàn thành chương trình bổ sung kiến thức của Học viện Kỹ thuật mật mã trong hạn không quá 1 năng từ ngày cấp',
+                'type'         => 'file_list',
+                'save_field'   => true,
+                'preview_size' => [100, 100], // Default: array( 50, 50 )50
+                //'preview_size' => [100, 100], // Default: array( 50, 50 )
+                // 'query_args' => array( 'type' => 'image' ), // Only images attachment
+                // Optional, override default text strings
+                'text'         => [
+                    'add_upload_files_text' => 'Upload Files', // default: "Add or Upload Files"
+                    'remove_image_text'     => 'Remove Image', // default: "Remove Image"
+                    'file_text'             => 'File', // default: "File:"
+                    'file_download_text'    => 'Download', // default: "Download"
+                    'remove_text'           => 'Remove', // default: "Remove"
+                ]
+            ],
+            'congVanCuDiDuThi'     => [
+                'name'         => esc_html__('5.Công văn gửi đi dự thi của thủ trưởng cơ quan quản lý', 'do an'),
+                'id'           => $prefix.'congVanCuDiDuThi',
+                'type'         => 'file_list',
+                'save_field'   => true,
+                'preview_size' => [100, 100], // Default: array( 50, 50 )50
+                //'preview_size' => [100, 100], // Default: array( 50, 50 )
+                // 'query_args' => array( 'type' => 'image' ), // Only images attachment
+                // Optional, override default text strings
+                'text'         => [
+                    'add_upload_files_text' => 'Upload Files', // default: "Add or Upload Files"
+                    'remove_image_text'     => 'Remove Image', // default: "Remove Image"
+                    'file_text'             => 'File', // default: "File:"
+                    'file_download_text'    => 'Download', // default: "Download"
+                    'remove_text'           => 'Remove', // default: "Remove"
+                ]
+            ],
+            'giayKhamSucKhoe'      => [
+                'name'         => esc_html__('6.Giấy chứng nhận đủ sức khoẻ để học tập của bệnh viện đa khoa có thời hạn trong 6 tháng',
+                    'do an'),
+                'id'           => $prefix.'giayKhamSucKhoe',
+                'type'         => 'file_list',
+                'save_field'   => true,
+                'preview_size' => [100, 100], // Default: array( 50, 50 )50
+                // 'preview_size' => [100, 100], // Default: array( 50, 50 )
+                // 'query_args' => array( 'type' => 'image' ), // Only images attachment
+                // Optional, override default text strings
+                'text'         => [
+                    'add_upload_files_text' => 'Upload Files', // default: "Add or Upload Files"
+                    'remove_image_text'     => 'Remove Image', // default: "Remove Image"
+                    'file_text'             => 'File', // default: "File:"
+                    'file_download_text'    => 'Download', // default: "Download"
+                    'remove_text'           => 'Remove', // default: "Remove"
+                ]
+            ],
+            'totNghiepNuocNgoai'   => [
+                'name'         => esc_html__('7.Thí sinh tốt nghiệp nước ngoài ',
+                    'do an'),
+                'id'           => $prefix.'totNghiepNuocNgoai',
+                'type'         => 'file_list',
+                'save_field'   => true,
+                'preview_size' => [100, 100], // Default: array( 50, 50 )50
+                //'preview_size' => [100, 100], // Default: array( 50, 50 )
+                // 'query_args' => array( 'type' => 'image' ), // Only images attachment
+                // Optional, override default text strings
+                'text'         => [
+                    'add_upload_files_text' => 'Upload Files', // default: "Add or Upload Files"
+                    'remove_image_text'     => 'Remove Image', // default: "Remove Image"
+                    'file_text'             => 'File', // default: "File:"
+                    'file_download_text'    => 'Download', // default: "Download"
+                    'remove_text'           => 'Remove', // default: "Remove"
+                ]
+            ],
+        ]
+    ]
+];

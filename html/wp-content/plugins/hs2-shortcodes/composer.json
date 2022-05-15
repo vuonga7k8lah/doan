@@ -1,0 +1,18 @@
+{
+    "autoload": {
+        "psr-4": {
+            "HSSC\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HSSCTEST\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "wilokecom/phpcli": "^1.12",
+        "phpunit/phpunit": "^7.2",
+        "symfony/http-foundation": "^4.3",
+        "vimeo/psalm": "^4.4"
+    }
+}

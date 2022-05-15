@@ -1,0 +1,102 @@
+//
+.wil-detail-page {
+  // TITLE
+  header h1 {
+    overflow-wrap: break-word;
+  }
+  //
+  #comment-reply-in-dropdown > a {
+    @apply block px-5 py-2 hover:bg-gray-300;
+  }
+  //
+  .wil-detail-page__meta-sticky {
+    width: 90px;
+    .w-14.h-14 {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .wil-detail-page__sm-meta-share {
+    .wil-dropdown__panel {
+      @apply bg-white p-4 border border-gray-300;
+    }
+  }
+  //
+  .wil-detail-page__content {
+    width: calc(100% - 80px);
+  }
+
+  // SINGLE 2
+  &.wil-detail-page--2 {
+    &.wil-detail-page--full {
+      &.wil-detail-page--has-meta-sticky {
+        .wil-detail-page2__meta-sticky {
+          @apply absolute top-0 right-full h-full;
+        }
+      }
+      .wil-detail-page2__content {
+        width: 100%;
+      }
+    }
+  }
+  //
+  .page-links {
+    .post-page-numbers {
+      @apply no-underline #{!important};
+      .page-link {
+        @apply w-10 h-10 bg-gray-100 dark:bg-gray-900 flex items-center justify-center rounded-full;
+      }
+      &.current {
+        .page-link {
+          @apply bg-primary;
+        }
+      }
+    }
+  }
+}
+
+// SINGLE PAGE FULL
+.wil-detail-page--full {
+  .prose {
+    // ---------------------------------- ## align-wrap ## ----------------------------------
+    @screen lg {
+      .alignwide {
+        width: calc(80vw - 16px);
+        max-width: calc(80vw - 16px);
+        margin-left: calc(calc(50% - 40vw) + 8px);
+      }
+    }
+
+    @screen md {
+      .alignfull {
+        width: calc(100vw - 16px);
+        max-width: calc(100vw - 16px);
+        margin-left: calc(calc(50% - 50vw) + 8px);
+      }
+    }
+  }
+
+  &.wil-detail-page--1,
+  &.wil-detail-page--3 {
+    &.wil-detail-page--has-meta-sticky {
+      .prose {
+        @screen lg {
+          .alignwide {
+            margin-left: calc(calc(50% - 40vw) + 8px - 40px);
+          }
+          .alignfull {
+            margin-left: calc(calc(50% - 50vw) + 8px - 40px);
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+#respond {
+  .form-submit {
+    @apply col-span-2 col-end-3;
+  }
+}

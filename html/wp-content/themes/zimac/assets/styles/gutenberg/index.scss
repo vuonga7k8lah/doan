@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# General Structure
+  ## Code
+  ## Cover
+  ## Embeds
+  ## Gallery
+  ## Group
+  ## Image
+  ## Latest Posts
+  ## List
+  ## More
+  ## Navigation
+  ## Pullquote
+  ## Quote
+  ## Separator
+  ## Site Tagline
+  ## Table
+  ## Video
+  ## Figcaption
+# Additional Theme Styles
+  ## Color Palette
+--------------------------------------------------------------*/
+
+@import "./align";
+@import "./code";
+@import "./cover";
+@import "./figcaption";
+@import "./gallery";
+@import "./image";
+@import "./list";
+@import "./pullquote";
+@import "./separator";
+@import "./table";
+
+.prose,
+.xl\:prose-lg {
+	* {
+		@apply max-w-full;
+	}
+	> * {
+		@apply my-5;
+	}
+
+	@apply max-w-screen-md mx-auto text-gray-700 dark:text-gray-100 font-body;
+	a.wp-block-button__link {
+		@apply text-white no-underline;
+	}
+	img,
+	embed,
+	iframe,
+	video {
+		@apply max-w-full;
+	}
+	video,
+	iframe {
+		@apply w-full;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply text-gray-900 dark:text-gray-200;
+	}
+	h1 + * {
+		@apply xl:mt-0;
+	}
+	h5 {
+		margin-bottom: 0.444em;
+	}
+	mark {
+		@apply bg-secondary text-gray-800 rounded px-2px;
+	}
+}

@@ -1,0 +1,384 @@
+.wil-content-submitted-posts-page {
+  @apply bg-gray-100 dark:bg-gray-800 #{!important};
+  a {
+    @apply underline font-medium;
+  }
+
+  // wpuf-info
+  .wpuf-info {
+    @apply text-gray-800;
+  }
+
+  //
+  .wpuf-user-loggedin {
+    @apply max-w-screen-sm mx-auto;
+    .wpuf-user-avatar img {
+      @apply rounded-lg;
+    }
+  }
+  #wpuf-login-form {
+    @apply max-w-screen-sm mx-auto p-12 bg-white dark:bg-gray-900 rounded-lg;
+    > form {
+      @apply mb-5;
+    }
+    #loginform,
+    #lostpasswordform {
+      input.input {
+        @apply rounded-md min-w-[220px];
+      }
+      @apply space-y-5;
+    }
+  }
+  #registrationform {
+    @apply max-w-screen-sm mx-auto p-12 bg-white dark:bg-gray-900 rounded-lg;
+    li {
+      @apply p-0;
+      &.wpuf-submit {
+        @apply py-4;
+      }
+    }
+    input.input {
+      @apply rounded-md min-w-[220px];
+    }
+  }
+
+  //
+  .wpuf-dashboard-container {
+    @apply rounded-lg overflow-hidden grid grid-cols-12 gap-6 text-gray-800 dark:text-gray-200;
+    .wpuf-dashboard-navigation {
+      @apply float-none w-full col-span-12 xl:col-span-3 bg-white dark:bg-gray-900 py-5 px-2 rounded-lg;
+      li {
+        &.active {
+          a {
+            @apply bg-gray-100  text-gray-800 dark:bg-gray-800 dark:text-gray-300;
+          }
+        }
+        a {
+          @apply px-6 py-2 hover:bg-gray-100 rounded-lg block font-medium text-gray-600 dark:text-gray-500 hover:text-gray-800  dark:hover:bg-gray-800 dark:hover:text-gray-300;
+        }
+      }
+    }
+    .wpuf-dashboard-content {
+      @apply float-none w-full col-span-12 xl:col-span-9 p-6 bg-white dark:bg-gray-900 rounded-lg;
+      ul.wpuf-form {
+        @apply grid grid-cols-1 gap-5;
+        > div.clear {
+          @apply hidden;
+        }
+        .wpuf-help {
+          @apply text-base text-gray-600 dark:text-gray-500;
+        }
+        li.has-error {
+          @apply bg-transparent;
+          .wpuf-error-msg {
+            @apply text-base text-red-600;
+          }
+        }
+        li,
+        li.wpuf-el {
+          @apply p-0 m-0;
+          &::after,
+          &::before {
+            content: none;
+          }
+
+          .wpuf-label {
+            @apply text-gray-700 dark:text-gray-400 text-body font-normal capitalize;
+          }
+          input {
+            @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+          }
+          select {
+            @apply block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+          }
+          textarea {
+            @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+          }
+          div {
+            @apply w-auto float-none;
+          }
+          .wp-editor-wrap {
+            @apply mt-2 rounded-sm;
+            .wp-editor-container {
+              @apply block rounded-md border-none;
+              .mce-edit-area iframe {
+                min-height: 300px;
+              }
+            }
+          }
+          .wpuf-attachment-upload-filelist {
+            @apply mt-2;
+            .file-selector {
+              @apply border-gray-300 rounded-md shadow-sm px-4 py-2 text-gray-700;
+            }
+          }
+        }
+        li.wpuf-submit {
+          @apply p-0;
+          div {
+            @apply w-auto float-none;
+          }
+          .wpuf-label {
+            @apply hidden;
+          }
+          [type="submit"] {
+            @apply rounded-full min-w-[200px] h-14 text-gray-900 bg-primary text-xs lg:text-sm xl:text-body inline-flex items-center justify-center text-center py-2 px-4 md:px-7 font-bold focus:outline-none w-auto border-0 shadow-none #{!important};
+            text-shadow: none !important;
+          }
+          .wpuf-errors {
+            @apply bg-transparent text-red-600 border-none m-0;
+          }
+        }
+
+        [type="submit"] {
+          @apply bg-primary font-medium cursor-pointer;
+        }
+      }
+    }
+
+    .wpuf-update-profile-form ul.wpuf-form {
+      @apply mx-0 #{!important};
+    }
+  }
+
+  .wpuf-dashboard-content.posts {
+    .post_count {
+      @apply mb-2 font-medium;
+    }
+    .items-table-container {
+      @apply border border-gray-100 dark:border-gray-800;
+    }
+    table.items-table.post {
+      @apply min-w-full text-base;
+      tr {
+        outline: none !important;
+      }
+      thead {
+        tr {
+          @apply bg-gray-100 dark:bg-gray-800;
+
+          th {
+            @apply px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+          }
+        }
+      }
+
+      tbody {
+        @apply divide-y divide-gray-200 dark:divide-gray-800;
+        td {
+          @apply px-4 py-4 whitespace-nowrap max-w-xs;
+          img {
+            @apply rounded-lg w-14 h-14 object-cover;
+          }
+
+          &:nth-child(2) {
+            @apply text-body break-words font-medium;
+            a {
+              @apply block whitespace-pre-wrap;
+            }
+          }
+        }
+      }
+    }
+
+    .wpuf-pagination {
+      @apply mt-6;
+    }
+  }
+
+  // FORM SUBMIT POST
+  .wpuf-form-add {
+    ul.wpuf-form {
+      @apply grid grid-cols-1 gap-5;
+      > div.clear {
+        @apply hidden;
+      }
+      .wpuf-help {
+        @apply text-base text-gray-600;
+      }
+      li.has-error {
+        @apply bg-transparent;
+        .wpuf-error-msg {
+          @apply text-base text-red-600;
+        }
+      }
+      li,
+      li.wpuf-el {
+        @apply p-0 m-0;
+        &::after,
+        &::before {
+          content: none;
+        }
+
+        .wpuf-label {
+          @apply text-gray-700 dark:text-gray-400 text-body font-normal capitalize;
+        }
+        input {
+          @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+        }
+        select {
+          @apply block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+        }
+        textarea {
+          @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50;
+        }
+        div {
+          @apply w-auto float-none;
+        }
+        .wp-editor-wrap {
+          @apply mt-2 rounded-sm;
+          .wp-editor-container {
+            @apply block rounded-md border-none;
+            .mce-edit-area iframe {
+              min-height: 300px;
+            }
+          }
+        }
+        .wpuf-attachment-upload-filelist {
+          @apply mt-2;
+          .file-selector {
+            @apply border-gray-300 rounded-md shadow-sm px-4 py-2 text-gray-700;
+          }
+        }
+      }
+      li.wpuf-submit {
+        @apply p-0;
+        div {
+          @apply w-auto float-none;
+        }
+        .wpuf-label {
+          @apply hidden;
+        }
+        [type="submit"] {
+          @apply rounded-full min-w-[200px] h-14 text-gray-900 bg-primary text-xs lg:text-sm xl:text-body inline-flex items-center justify-center text-center py-2 px-4 md:px-7 font-bold focus:outline-none w-auto border-0 shadow-none #{!important};
+          text-shadow: none !important;
+        }
+        .wpuf-errors {
+          @apply bg-transparent text-red-600 border-none m-0;
+        }
+      }
+
+      [type="submit"] {
+        @apply bg-primary font-medium cursor-pointer;
+      }
+    }
+  }
+
+  // PHAN CHONSE PRICING
+  .wpuf_packs {
+    @apply flex flex-col xl:flex-row items-center justify-center xl:space-x-7;
+    > li {
+      @apply block w-full md:w-1/2 xl:w-1/4 rounded-lg overflow-hidden shadow-lg border-0 mr-0 bg-white dark:bg-gray-900 #{!important};
+      .wpuf-pricing-wrap {
+        @apply bg-white dark:bg-gray-900 #{!important};
+      }
+      .wpuf-sub-desciption {
+        @apply bg-transparent;
+        li {
+          @apply border-gray-100 dark:border-gray-700;
+        }
+      }
+      h3 {
+        @apply bg-gray-800 dark:bg-gray-900 border-gray-800 text-gray-100 font-bold #{!important};
+      }
+      .wpuf-sub-amount {
+        @apply bg-gray-100 border-none bg-opacity-80 text-gray-800 #{!important};
+      }
+      .wpuf-sub-button {
+        a {
+          @apply rounded-full min-w-[200px] h-14 text-gray-900 bg-primary text-xs lg:text-sm xl:text-body inline-flex items-center justify-center text-center py-2 px-4 md:px-7 font-bold focus:outline-none w-auto border-0 shadow-none #{!important};
+        }
+      }
+    }
+  }
+
+  // wpuf_cancel_subscription
+  #wpuf_cancel_subscription {
+    @apply mb-10 mt-2;
+    [type="submit"] {
+      @apply rounded-full min-w-[140px] h-14 text-gray-900 bg-gray-300 text-xs lg:text-sm xl:text-body inline-flex items-center justify-center text-center py-2 px-4 md:px-7 font-bold focus:outline-none w-auto border-0 shadow-none cursor-pointer #{!important};
+    }
+  }
+
+  // TRANG EDIT POST
+  form.wpuf-form-add {
+    @apply max-w-screen-md mx-auto;
+  }
+
+  // PAGINATION DEFAUT OF WPUF
+  .wpuf-pagination {
+    @apply flex items-center justify-center  font-medium text-lg space-x-3 mb-8 #{!important};
+    .page-numbers {
+      @apply w-10 h-10 bg-gray-100 dark:bg-black flex items-center justify-center rounded-full border-none hover:text-gray-800 text-gray-700 dark:text-gray-300 #{!important};
+      &.current {
+        @apply w-12 h-12 text-gray-900 bg-primary flex items-center justify-center rounded-full border #{!important};
+      }
+    }
+  }
+
+  // pass-strength-result
+  .pass-strength-result {
+    @apply dark:bg-gray-300 dark:text-gray-900;
+  }
+
+  .wpuf_sub_info h3 {
+    @apply dark:bg-gray-300 dark:text-gray-900;
+  }
+
+  // PAYMENT GATEWAY PAGE
+  .wpuf-payment-gateway-wrap {
+    .wpuf-coupon-info-wrap {
+      @apply border-gray-400;
+    }
+
+    .wpuf-payment-gateways {
+      > li {
+        label {
+          @apply flex items-center;
+          input {
+            @apply mr-3;
+          }
+          img {
+            @apply ml-4;
+          }
+        }
+      }
+
+      .wpuf-payment-instruction .wpuf-instruction {
+        @apply dark:bg-gray-900 #{!important};
+      }
+    }
+    #wpuf-payment-gateway {
+      @apply ml-0;
+    }
+
+    //
+    [type="submit"] {
+      @apply rounded-full min-w-[200px] h-14 text-gray-900 bg-primary text-xs lg:text-sm xl:text-body inline-flex items-center justify-center text-center py-2 px-4 md:px-7 font-bold focus:outline-none w-auto border-0 shadow-none cursor-pointer #{!important};
+      text-shadow: none !important;
+    }
+  }
+
+  [type="submit"] {
+    @apply rounded-full min-w-[200px] h-14 text-gray-900 bg-primary text-xs lg:text-sm xl:text-body inline-flex items-center justify-center text-center py-2 px-4 md:px-7 font-bold focus:outline-none w-auto border-0 shadow-none cursor-pointer #{!important};
+    text-shadow: none !important;
+  }
+
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply dark:bg-white dark:bg-opacity-0 shadow-none #{!important};
+  }
+}

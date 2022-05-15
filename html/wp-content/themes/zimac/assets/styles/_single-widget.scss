@@ -1,0 +1,64 @@
+div[class] {
+  .wil-single-sidebar,
+  div[data-widget_type^="wp-widget-"] {
+    // SEARCH FORM
+    .searchform,
+    select {
+      @apply text-gray-700;
+    }
+
+    @apply text-gray-700 dark:text-gray-200;
+    // RSS
+    .rsswidget {
+      @apply text-gray-800 dark:text-gray-100;
+    }
+
+    // TABLE
+    .calendar_wrap {
+      caption {
+        @apply mb-2 text-left;
+      }
+      table {
+        @apply w-full;
+        td,
+        th {
+          @apply text-left;
+        }
+      }
+      a,
+      caption {
+        @apply text-gray-900 dark:text-gray-100;
+      }
+    }
+
+    // UL LIST
+    ul {
+      @apply space-y-4;
+    }
+    .menu-item,
+    .cat-item,
+    .page_item,
+    li {
+      @apply space-y-4;
+      ul {
+        @apply space-y-4 pl-4;
+      }
+      a {
+        @apply hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200 capitalize;
+      }
+    }
+
+    //
+    .wil-SocialNetworkWidget {
+      .wil-SocialNetworkWidget__social-icon {
+        @apply bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-300;
+      }
+    }
+    //
+    .wil-post-card-10 {
+      @apply bg-gray-800 bg-opacity-80 dark:bg-gray-900;
+    }
+    //
+    //
+  }
+}

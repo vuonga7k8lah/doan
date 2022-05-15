@@ -1,0 +1,20 @@
+.searchform {
+	> div {
+		@apply flex;
+		#searchsubmit {
+			@apply ml-1 px-2;
+		}
+	}
+}
+
+// TAG CLOUD
+.tagcloud {
+	.tag-cloud-link {
+		@apply inline-block px-3.5 py-2 text-gray-900 bg-gray-300 text-sm font-medium rounded-1.5xl mr-1 mb-1 #{!important};
+	}
+}
+
+// TEXT WIDGET
+.textwidget {
+	@apply prose-sm;
+}

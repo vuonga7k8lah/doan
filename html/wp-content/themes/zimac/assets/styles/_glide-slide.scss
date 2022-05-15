@@ -1,0 +1,29 @@
+// === Custom Glide js === //
+.wil-sidebar-tab-post .glide__bullet--active {
+	background-color: transparent;
+}
+// === wil-glidejs-slide-fade === //
+.wil-glidejs-slide-fade {
+	.glide-fade.glide--swipeable {
+		.glide__slides {
+			transform: none !important;
+			width: auto !important;
+			display: block;
+		}
+		.glide__slide {
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0;
+			transition: opacity 0s;
+		}
+		.glide__slide:first-child {
+			position: relative;
+		}
+		.glide__slide--active {
+			z-index: 1;
+			opacity: 1;
+			transition: opacity 1.6s;
+		}
+	}
+}

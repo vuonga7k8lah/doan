@@ -1,0 +1,80 @@
+.editor-post-title__input {
+    color: red !important;
+}
+
+.wp-block.editor-post-title.editor-post-title__block .editor-post-title__input {
+    font-family: 'DMSans',system-ui,sans-serif;
+}
+
+table {
+    border-top: 1px solid #f0f0f2;
+    border-bottom: 1px solid #f0f0f2;
+}
+  
+table>:not(caption)>*>* {
+    border-width: 0 1px !important;
+    border-style: solid !important;
+    border-color: #f0f0f2 !important;
+}
+  
+table tbody td:first-child {
+    padding-left: .5714286em !important;
+}
+
+.wp-admin #wpwrap .block-editor-block-list__layout.is-root-container p {
+    /* padding: 14px; */
+    line-height: 1.5;
+}
+
+.block-editor-rich-text__editable.wp-block-button__link.rich-text br {
+    display: none;
+}
+
+.wp-admin #wpwrap .block-editor-block-list__layout.is-root-container .blocks-gallery-item figure figcaption {
+    color: #fff;
+}
+
+.wp-admin #wpwrap .block-editor-block-list__layout.is-root-container .wp-block[data-align=wide], .wp-admin #wpwrap .block-editor-block-list__layout.is-root-container>.wp-block.alignwide {
+    max-width: 800px !important;
+}
+
+.wp-admin #wpwrap .block-editor-block-list__layout.is-root-container ul>li .wp-block-rss__item-title {
+    color: #1b113e;
+}
+.block-editor-block-list__layout .wp-block {
+    margin: 0;
+}
+.wp-admin #wpwrap .block-editor-block-list__layout.is-root-container blockquote p {
+    color: #7b778d;
+}
+
+.wp-block-pullquote .wp-block-pullquote__citation {
+    font-family: 'DMSans',system-ui,sans-serif;
+    color: #281c55;
+}
+
+.wp-admin #wpwrap .block-editor-block-list__layout.is-root-container blockquote {
+    min-height: 70px;
+}
+.wp-admin #wpwrap .block-editor-block-list__layout.is-root-container .wp-block[data-align=full], .wp-admin #wpwrap .block-editor-block-list__layout.is-root-container>.wp-block.alignfull {
+    max-width: 800px !important;
+}
+
+.wp-admin #wpwrap .block-editor-block-list__layout.is-root-container>* {
+    max-width: 800px !important;
+}
+
+.block-editor-rich-text__editable.wp-block-quote__citation.rich-text em {
+    font-family: 'DMSans',system-ui,sans-serif;
+    color: #281c55;
+    font-size: 20px;
+}
+
+.block-editor-rich-text__editable.wp-block-quote__citation.rich-text {
+    font-family: 'DMSans',system-ui,sans-serif;
+    color: #281c55;
+}
+
+.wp-block.editor-post-title.editor-post-title__block {
+    max-width: 800px !important;
+}

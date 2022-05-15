@@ -1,0 +1,346 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Hs2 Shortcodes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-16 09:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.2\n"
+"X-Domain: hs2-shortcodes"
+
+#: app/Widgets/Controllers/MyWidgetPostTabs.php:248
+msgid " Fillter Settings"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetPostTabs.php:24
+msgid "A block posts tabs."
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:20
+msgid "A list of categories."
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetSlideListPosts.php:25
+msgid "A Slider list of posts."
+msgstr ""
+
+#: app/Widgets/Controllers/SocialNetworkWidget.php:22
+msgid "About Us"
+msgstr ""
+
+#: app/Widgets/Controllers/SocialNetworkWidget.php:24
+msgid "About us, socials Widget"
+msgstr ""
+
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/RenderHeaderFilter.php:113
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/RenderHeaderFilter.php:131
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/RenderHeaderFilter.php:140
+msgid "All"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:66
+msgid "All Categories"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:144
+msgid "ASC"
+msgstr ""
+
+#: app/Controllers/Elementor/AuthorsListElement/AuthorsListElement.php:46
+msgid "Authors List"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:23
+#: app/Widgets/Controllers/MyWidgetCategories.php:41
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:87
+msgid "Categories"
+msgstr ""
+
+#: app/Controllers/Elementor/CategoriesBoxElement/CategoriesBoxElement.php:42
+msgid "Category Box Grid"
+msgstr ""
+
+#: app/Controllers/Elementor/LookCoolPostsElement/config.php:25
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:48
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:73
+msgid "Categorys"
+msgstr ""
+
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/ColorfulPostsFilterElement.php:43
+msgid "Colorful Posts Filter"
+msgstr ""
+
+#: app/Controllers/Shortcodes/NumberCommentsSc.php:26
+msgid "Comment"
+msgstr ""
+
+#: app/Controllers/Shortcodes/NumberCommentsSc.php:27
+msgid "Comments"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:129
+msgid "Count"
+msgstr ""
+
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:16
+msgid "Default title"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:141
+msgid "DESC"
+msgstr ""
+
+#: app/Widgets/Controllers/SocialNetworkWidget.php:48
+msgid "Description"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:39
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:27
+msgid "Featured Image Size"
+msgstr ""
+
+#: app/Controllers/Elementor/LookCoolPostsElement/config.php:19
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:53
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:42
+msgid "Filter Setting"
+msgstr ""
+
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:42
+msgid "Filter Settings"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:46
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:34
+msgid "Full"
+msgstr ""
+
+#: app/Controllers/Elementor/LookCoolPostsElement/config.php:8
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:8
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:8
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:9
+msgid "General Settings"
+msgstr ""
+
+#. Name of the plugin
+msgid "Hs2 Shortcodes"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://docs.wiloke.com/hs2-documentation/"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://hs2.wiloke.com/"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetPostTabs.php:252
+msgid "Label: (Levea empty if do not use this tab)"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:45
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:33
+msgid "Large"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:68
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:80
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:52
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:65
+msgid "Leave empty if do not show this filter"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:14
+msgid "Leave empty if you want hidden title"
+msgstr ""
+
+#: app/Controllers/Elementor/LookCoolPostsElement/LookCoolPostsElement.php:42
+msgid "Look Cool Posts"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:44
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:32
+msgid "Medium"
+msgstr ""
+
+#: app/Controllers/Shortcodes/NumberCommentsSc.php:22
+msgid "Missing Pass Parameter"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:126
+msgid "Name"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:118
+msgid "Number of categories:"
+msgstr ""
+
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:76
+msgid "Number Of Posts"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetRecentPosts.php:177
+msgid "Number of posts:"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:31
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:30
+msgid "Number Posts"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:63
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:48
+msgid "Order By Options"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:75
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:60
+msgid "Order By Options Default"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:123
+msgid "Order By:"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:138
+msgid "Order:"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:119
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:102
+msgid "Pagination"
+msgstr ""
+
+#. Description of the plugin
+msgid "Part of Hs2 theme"
+msgstr ""
+
+#: app/Controllers/Elementor/CategoriesBoxElement/CategoriesBoxElement.php:193
+msgid "Post"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetSlideListPosts.php:28
+msgid "Posts Slider"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetPostTabs.php:27
+msgid "Posts Tabs"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetRecentPosts.php:21
+msgid "Recent Posts"
+msgstr ""
+
+#: app/Controllers/Elementor/RectanglePostGridElementor/RectanglePostGridElementor.php:45
+msgid "Rectangle Post Grid"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:92
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:108
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:52
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:66
+msgid "Search ... "
+msgstr ""
+
+#: app/Shared/Elementor/Select2AjaxControl.php:52
+msgid "Search for a category"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:13
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:13
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:14
+msgid "Section Title"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetCategories.php:132
+msgid "Slug"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetPostTabs.php:65
+#: app/Widgets/Controllers/MyWidgetPostTabs.php:241
+msgid "Something wrent error!"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetPostTabs.php:72
+#: app/Controllers/Elementor/RectanglePostGridElementor/RectanglePostGridElementor.php:173
+#: app/Controllers/Elementor/LookCoolPostsElement/LookCoolPostsElement.php:136
+#: app/Controllers/Elementor/CreativePostsFilterElement/CreativePostsFilterElementContent.php:42
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/ColorfulPostsFilterElementContent.php:53
+msgid "Sorry! We found no post!"
+msgstr ""
+
+#: app/Controllers/Elementor/CategoriesBoxElement/CategoriesBoxElement.php:189
+msgid "Sorry! We found no term!"
+msgstr ""
+
+#: app/Controllers/Elementor/LookCoolPostsElement/config.php:39
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:104
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:62
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:87
+msgid "Specified Posts"
+msgstr ""
+
+#: app/Users/Controllers/UserBookmarkController.php:80
+#: app/Users/Controllers/UserCommentEmotionController.php:86
+#: app/Users/Controllers/UserCountViewsController.php:113
+msgid "The data has been created successfully"
+msgstr ""
+
+#: app/Users/Controllers/UserBookmarkController.php:132
+#: app/Users/Controllers/UserCommentEmotionController.php:135
+#: app/Users/Controllers/UserCountViewsController.php:167
+msgid "The data has been deleted successfully"
+msgstr ""
+
+#: app/Users/Controllers/UserBookmarkController.php:55
+#: app/Users/Controllers/UserCommentEmotionController.php:54
+#: app/Users/Controllers/UserCountViewsController.php:56
+msgid "The data has been returned successfully"
+msgstr ""
+
+#: app/Users/Controllers/UserBookmarkController.php:106
+#: app/Users/Controllers/UserCommentEmotionController.php:109
+#: app/Users/Controllers/UserCountViewsController.php:140
+msgid "The data has been updated successfully"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:43
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:31
+msgid "Thumbnail"
+msgstr ""
+
+#: app/Widgets/Controllers/SocialNetworkWidget.php:41
+msgid "Title"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:21
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:20
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:21
+msgid "Title Url"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetRecentPosts.php:172
+#: app/Widgets/Controllers/MyWidgetCategories.php:113
+msgid "Title:"
+msgstr ""
+
+#: app/Controllers/Elementor/CreativePostsFilterElement/config.php:18
+#: app/Controllers/Elementor/AmazingPostsShowcaseElement/config.php:17
+#: app/Controllers/Elementor/ColorfulPostsFilterElement/config.php:18
+msgid "Type your title here"
+msgstr ""
+
+#. Author of the plugin
+msgid "Wiloke"
+msgstr ""
+
+#: app/Widgets/Controllers/MyWidgetRecentPosts.php:18
+msgid "Your site&#8217;s most recent Posts."
+msgstr ""

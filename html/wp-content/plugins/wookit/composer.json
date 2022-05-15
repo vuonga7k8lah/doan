@@ -1,0 +1,19 @@
+{
+  "autoload": {
+    "psr-4": {
+      "DoAn\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DoAn\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "wilokecom/phpcli": "^1.28"
+  },
+  "require": {
+    "predis/predis": "^1.1",
+    "php-amqplib/php-amqplib": ">=3.0"
+  }
+}

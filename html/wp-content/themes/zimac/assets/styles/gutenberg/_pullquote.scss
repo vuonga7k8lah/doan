@@ -1,0 +1,77 @@
+.prose,
+.xl\:prose-lg {
+  // ------------------------------------------ ## Pullquote ------------------------------------------
+  .wp-block-pullquote {
+    text-align: unset;
+    @apply pt-0 pb-0 border-none;
+  }
+
+  .wp-block-quote.is-large,
+  .wp-block-quote.is-style-large {
+    padding-right: 0;
+    border: none;
+    @apply pl-20;
+  }
+
+  .has-background {
+    @apply py-8 rounded-2xl dark:bg-transparent;
+    @apply dark:border dark:border-gray-600 dark:border-solid #{!important};
+    blockquote {
+      @apply border-none;
+      p,
+      cite {
+        color: inherit !important;
+      }
+    }
+  }
+}
+
+//
+.prose {
+  blockquote {
+    min-height: 70px;
+    &:not(.has-text-color) {
+      @apply text-gray-600 dark:text-gray-500;
+    }
+    @apply border-none pl-20 relative font-Merriweather text-lg italic leading-8;
+
+    &::before {
+      @apply absolute top-0 left-0 w-[60px] h-[60px] mt-[6px] bg-gray-800 dark:bg-gray-900 text-primary flex items-center justify-center rounded-2xl text-3xl;
+      content: "\f10e";
+      font-family: "Line Awesome Free";
+      font-weight: 900;
+      -webkit-font-smoothing: antialiased;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+    }
+
+    p {
+      @apply m-0;
+      &:first-of-type::before,
+      &:last-of-type::after {
+        display: none;
+      }
+    }
+    cite {
+      @apply flex items-center text-gray-800 dark:text-gray-200 font-body font-bold;
+      &::before {
+        @apply bg-gray-300 rounded-full mr-3;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 26px;
+      }
+    }
+    &.has-text-align-right {
+      @apply pl-0 pr-20 border-none;
+      &::before {
+        @apply absolute top-0 left-auto right-0;
+      }
+      cite {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

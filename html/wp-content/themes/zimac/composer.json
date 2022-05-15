@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "ZIMAC\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ZM_TEST\\": "tests"
+    }
+  }
+}
